@@ -1,0 +1,146 @@
+.navbar{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3.5vh;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    padding-left: 5vw;
+    padding-right: 1vw;
+}
+
+.navbar_left{
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_right{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_left input{
+    padding: 1vh;
+    margin: 0 5vw;
+    flex-grow: 1;
+    border: 1px solid rgb(199, 198, 198);
+    border-radius : 0.2rem;
+}
+
+.navbar_logo{
+    cursor: pointer;
+}
+
+
+.navbar_right button{
+    cursor: pointer;
+    padding: 1vh;
+    width: 100%;
+    border: 1px solid rgb(199, 198, 198);
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 0.2rem;
+    color: rgb(0, 0, 0);
+    margin: 0 7vw;
+}
+
+.navbar_right:hover button{
+    background-color: crimson;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
+    color: white;
+}
+
+.navbar_rightIcon{
+    display: none;
+}
+
+.navbar_userItem{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userAvatar{
+    cursor: pointer;
+    height: 5vh;
+    border-radius: 50%;
+}
+
+.navbar_userItem_icons{
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar_userItem_value{
+    font-size: small;
+    font-weight: 700;
+}
+
+.navbar_userItem_icons:hover{
+    color: crimson;
+}
+
+.navbar_dropdown{
+    position: absolute;
+    top: 8vh;
+    right: 1vw;
+    width: 15em;
+    border: 1px solid rgb(199, 198, 198);
+    background-color: rgb(255, 255, 255);
+    z-index: 200;
+}
+
+hr{
+    margin: 0;
+}
+
+.navbar_dropdownItem{
+    cursor: pointer;
+    text-align: justify;
+    padding: 1em;
+    font-size: medium;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_dropdownItem:hover{
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+input:focus{
+    outline: none;
+}
+
+@media screen and (max-width:820px){
+    .navbar_userItem_icons{
+        font-size: 20px;
+    }
+} 
+
+@media screen and (max-width:650px) {
+    .navbar{
+        font-size: 2.5vh;
+        padding-right:0 ;
+    }
+    .navbar_right button{
+        display: none;
+    }
+    .navbar_left input{
+        margin: 0;
+        margin-left: 3vw;
+    }
+    .navbar_rightIcon{
+        display: block;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .navbar_userItem_icons{
+        display: none;
+    }
+}

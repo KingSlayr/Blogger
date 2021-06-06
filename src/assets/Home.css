@@ -1,0 +1,137 @@
+.home{
+    margin-top: 9vh;
+    height: 91vh;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 20%);
+    display: flex;
+}
+
+.homeLeft{
+    flex: 0.15;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 8vh;
+    border-radius: 0.3rem;
+}
+
+.homeLeftIcon{
+    font-size: 24px;
+    color: rgb(43, 43, 43);
+    margin: 5vh 3vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeLeftIcon div{
+    margin-top: 5px;
+    font-size: medium;
+}
+
+.homeLeftIcon:hover{
+    color: crimson;
+}
+
+.homeMiddle{
+    overflow: scroll;
+    background-color: white;
+    flex: 0.6;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.homeRight{
+    flex: 0.25;
+    border-radius: 0.3rem;
+}
+
+.postHead{
+    height: 18vw;
+}
+
+.postHead>img{
+    height: 100%;
+    width: 100%;
+}
+
+.postTitleHeading{
+    margin: 4vh 0;
+    padding: 0 2vw;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.postUser{
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+}
+.postUsername{
+    margin-left: 1.8vw;
+    cursor: pointer;
+    font-size: large;
+}
+.postUser img{
+    margin-left: 2vw;
+    height: 6vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.postContent{
+    padding-top: 4vh;
+    margin: 0 2vw;
+}
+
+.postTitleTags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    padding-bottom: 2vh;
+}
+
+.postTag{
+    margin: 1vh;
+    background-color: blue;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:820px){
+    .homeLeft{
+        display: none;
+    }
+    .homeMiddle{
+        margin-left: 2vw;
+    }
+    .postHead{
+        height: 20vw;
+    }
+    .postTitleHeading{
+        font-size: x-large;
+    }
+} 
+
+@media screen and (max-width:650px){
+    .homeRight{
+        display: none;
+    }
+    .homeMiddle{
+        flex: 1;
+        margin: 0 2vw;
+    }
+    .postHead{
+        height: 35vw;
+    }
+    .postTitleHeading{
+        /* font-size: large; */
+    }
+    .postTitleTags{
+        font-size: x-small;
+    }
+    .postTag{
+        margin: 3px;
+        padding: 3px;
+    }
+} 
